@@ -1,0 +1,147 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App{
+    width: 800px;
+}
+
+.post{
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.post-enter{
+    transform: translateX(-350px);
+}
+.post-enter-activate{
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+}
+.post-exit{
+    opacity: 1;
+}
+.post-exit-active{
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+}
+
+.page_wrapper {
+    margin-top: 50px;
+    display: flex;
+}
+
+.page {
+    padding: 10px;
+    margin-top: 50px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+.page__current {
+    margin-top: 50px;
+    border: 5px solid orange;
+    font-weight: bold;
+}
+
+.navbar {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #007f7f;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar > h2 {
+    color: #fffbf5;
+}
+.navbarRight {
+    display: flex;
+    align-items: center;
+}
+.navbarRight > Link {
+    padding: 15px;
+    width: 150px;
+    background-color: #d3d128;
+    color: #fffbf5;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.navbarRight > button {
+    padding: 15px;
+    width: 150px;
+    background-color: #d3d128;
+    color: #fffbf5;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.login,.register{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+.registerTitle,
+.loginTitle {
+    margin-bottom: 30px;
+}
+.registerForm,
+.loginForm {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.loginBtn{
+    display: block;
+    width: 100px;
+    padding: 15px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fffbf5;
+    background-color: #007f7f;
+    margin-bottom: 15px;
+}
+.registerBtn{
+    display: block;
+    width: 200px;
+    padding: 15px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fffbf5;
+    background-color: #007f7f;
+    margin-bottom: 15px;
+}
