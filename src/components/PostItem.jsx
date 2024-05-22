@@ -10,6 +10,7 @@ const PostItem =(props)=>
           <div>
             {props.post.body}
           </div>
+            <MyButton>Открыть</MyButton>
         </div>
       </div>
     );
